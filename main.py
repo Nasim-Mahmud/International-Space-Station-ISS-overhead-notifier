@@ -1,5 +1,8 @@
 import requests
 
+MY_LAT = 23.810331
+MY_LONG = 90.412521
+
 # # Importing API endpoint
 # response = requests.get(url="http://api.open-notify.org/iss-now.json")
 # response.raise_for_status()
@@ -13,6 +16,13 @@ import requests
 
 # Sunset time
 
-response = requests.get("https://api.sunrise-sunset.org/json")
+parameters = {
+    "lat": MY_LAT,
+    "lng": MY_LONG,
+}
+
+response = requests.get("https://api.sunrise-sunset.org/json", params=parameters)
 response.raise_for_status()
 
+data = response.json()
+print(data)
