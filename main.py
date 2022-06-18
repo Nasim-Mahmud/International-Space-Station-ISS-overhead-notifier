@@ -49,8 +49,8 @@ while True:
     # Runs the code in every 60 seconds.
     time.sleep(60)
     if iss_overhear() and is_dark_outside():
-        my_email= "tmailone01@gmail.com"
-        my_pass= "rteqejuqqdhcgpzx"  # Not the actual password.
+        my_email = "tmailone01@gmail.com"
+        my_pass = "rteqejuqqdhcgpzx"  # Not the actual password.
 
         receivers_email = "tmailtwo02@yahoo.com"
 
@@ -62,4 +62,3 @@ while True:
                                     "Hey Buddy, Go outside and look up into the sky. Can you see"
                                     "the International Space Station? Isn't that amazing!"
                                 )
-
