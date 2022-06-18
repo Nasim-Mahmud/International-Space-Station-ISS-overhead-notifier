@@ -1,5 +1,6 @@
 import requests
 from datetime import datetime as dt
+from smtplib import *
 
 MY_LAT = 23.810331
 MY_LONG = 90.412521
@@ -42,5 +43,18 @@ def is_dark_outside():
     if time_now >= sunset_in_my_country or time_now <= sunrise_in_my_country:
         return True
 
-# Then send me an email to tell me to look up.
+if iss_overhear() and is_dark_outside():
+    my_email= "tmailone01@gmail.com"
+    my_pass= "rteqejuqqdhcgpzx"  # Not the actual password.
+
+    receivers_email = "tmailtwo02@yahoo.com"
+
+    with SMTP("smtp.gmail.com", 587) as connection:
+        connection.starttls()
+        connection.login(user=my_email, password=my_pass)
+        connection.sendmail(from_addr=my_email, to_addrs=receivers_email,
+                            msg="Subject: LOOK UP! IT's the ISS\n\n"
+                                "Hey Buddy, Go outside and look up into the sky. Can you see"
+                                "the International Space Station? Isn't that amazing!"
+                            )
 # Run the code in every 60 seconds.
