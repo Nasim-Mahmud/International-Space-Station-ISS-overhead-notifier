@@ -24,6 +24,7 @@ parameters = {
 response = requests.get("https://api.sunrise-sunset.org/json", params=parameters)
 response.raise_for_status()
 
+# Time will be shown as UTC time zone
 data = response.json()
 sunrise = data["results"]["sunrise"]
 sunset = data["results"]["sunset"]
