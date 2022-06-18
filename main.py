@@ -46,6 +46,7 @@ def is_dark_outside():
 
 
 while True:
+    # Runs the code in every 60 seconds.
     time.sleep(60)
     if iss_overhear() and is_dark_outside():
         my_email= "tmailone01@gmail.com"
@@ -61,4 +62,4 @@ while True:
                                     "Hey Buddy, Go outside and look up into the sky. Can you see"
                                     "the International Space Station? Isn't that amazing!"
                                 )
-# Run the code in every 60 seconds.
+
