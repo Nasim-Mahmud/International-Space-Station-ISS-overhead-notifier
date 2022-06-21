@@ -50,6 +50,7 @@ def is_dark_outside():
 while True:
     # Runs the code in every 60 seconds.
     time.sleep(60)
+
     if iss_overhear() and is_dark_outside():
         my_email = "tmailone01@gmail.com"
         my_pass = "rteqejuqqdhcgpzx"  # Not the actual password.
