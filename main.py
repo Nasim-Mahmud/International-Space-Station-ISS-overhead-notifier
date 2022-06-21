@@ -3,6 +3,7 @@ from datetime import datetime as dt
 from smtplib import *
 import time
 
+# The longitude and latitude of my current position.
 MY_LAT = 23.810331
 MY_LONG = 90.412521
 
