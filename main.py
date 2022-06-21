@@ -53,7 +53,7 @@ while True:
 
     if iss_overhear() and is_dark_outside():
         my_email = "tmailone01@gmail.com"
-        my_pass = "rteqejuqqdhcgpzx"  # Not the actual password.
+        my_pass = "rteqejuqqdhcgpzx"                        # Not the actual password.
 
         receivers_email = "tmailtwo02@yahoo.com"
 
