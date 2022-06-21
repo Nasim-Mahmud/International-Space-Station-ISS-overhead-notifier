@@ -28,7 +28,7 @@ parameters = {
     "formatted": 0,
 }
 
-
+# Detecting darkness outside.
 def is_dark_outside():
     response = requests.get("https://api.sunrise-sunset.org/json", params=parameters)
     response.raise_for_status()
