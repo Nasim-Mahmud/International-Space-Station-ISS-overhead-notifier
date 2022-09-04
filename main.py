@@ -20,6 +20,7 @@ def iss_overhear():
     if (MY_LAT - 5) <= iss_latitude <= (MY_LAT + 5) and MY_LONG - 5 <= iss_longitude <= MY_LONG + 5:
         return True
 
+
 # Sunset time
 parameters = {
     "lat": MY_LAT,
@@ -52,7 +53,7 @@ while True:
 
     if iss_overhear() and is_dark_outside():
         my_email = "tmailone01@gmail.com"
-        my_pass = "rteqejuqqdhcgpzx"                        # Not the actual password.
+        my_pass = "rteqejuqqdhcgpzx"  # Not the actual password.
 
         receivers_email = "tmailtwo02@yahoo.com"
 
