@@ -46,7 +46,6 @@ def is_dark_outside():
     if time_now >= sunset_in_my_country or time_now <= sunrise_in_my_country:
         return True
 
-
 while True:
     # Runs the code in every 60 seconds.
     time.sleep(60)
