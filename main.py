@@ -47,7 +47,6 @@ def is_dark_outside():
         return True
 
 
-
 while True:
     # Runs the code in every 60 seconds.
     time.sleep(60)
